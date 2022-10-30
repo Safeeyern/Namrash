@@ -678,7 +678,7 @@ a {
 }
 .service {
     padding: 1rem;
-    height: 18rem;
+    height: 20rem;
     
     text-align: center;
     
@@ -823,7 +823,7 @@ a {
     background: white;
     color: blue;
     height: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     
 }
 .nav-contact3 {
@@ -836,7 +836,7 @@ a {
     margin: auto;
 }
 .nav-contact3 p {
-    font-size: 1rem;
+    font-size: .5rem;
     font-weight: bold;
     font-family:monospace;
     padding-top: 5px;
