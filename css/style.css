@@ -1,0 +1,901 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    align-items: center;
+}
+#nav1 {
+    background: #eee;
+    color: blue;
+    height: 3rem;
+    
+}
+.nav-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: .71rem;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}
+.nav-contact p {
+    font-size: 13px;
+    font-weight: bold;
+    font-family:monospace;
+    padding-top: 5px;
+}
+
+#nav2 {
+    background: blue;
+    
+}
+.nav2-container {
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    height: 3rem;
+}
+.nav2 {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
+a {
+    text-decoration: none;
+}
+.menus ul a{
+    padding: .75rem;
+    color: white;
+    font-size: 15px;
+    margin: 10px 5px;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.menus ul a:hover{
+    background: white;
+    color: blue;
+    border-radius: 5px;
+    
+}
+#nav2 ul .menu-contact  {
+    background: orange;
+    color: black;
+    border-radius:5px;
+    padding:.5rem;
+}
+#nav2 ul .menu-contact:hover  {
+    background: black;
+    color: white;
+    
+    
+}
+.logo h1 {
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+}
+#overlay {
+    height: 80vh;
+    background: url(../img/bg3.jpg) no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+}
+#overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+#overlay *{
+    z-index: 10;
+}
+#overlay-content {
+    color: white;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding-top: 10rem;
+    
+}
+#overlay-content h1{
+    font-size: 3rem;
+    line-height: 1.5;
+    /* color: blue; */
+    
+
+}
+#overlay-content h2{
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    color: orange;
+
+}
+#overlay-content a{
+    background: orange;
+    color: black;
+    width: 20rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    
+
+}
+#overlay-content a:hover{
+    background: black;
+    color: orange;
+ 
+}
+#overlay-footer {
+    background: orange;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    
+}
+#overlay-footer h1{
+   
+    padding-top: 1rem;
+}
+#about {
+    /* height: 50vh; */
+}
+.image-text-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    
+    
+    
+}
+.image-grid img{
+    height: 100%;
+    width: 100%;
+}
+.section-header h1{
+    text-align: center;
+    color: blue;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+.text-grid {
+    font-size: 1.8rem;
+    padding: 1rem;
+    border: orange solid 4px;
+    line-height: 1.5;
+}
+
+.image-grid {
+    
+    border: orange solid 4px;
+   
+}
+
+.work {
+    background-color: orange;
+    padding: 2rem 5rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.work h1 {
+    font-size: 2.5rem;
+}
+.work p {
+    font-size: 1.5rem;
+}
+.contact-btn {
+    background: white;
+    margin-top: 2px;
+    padding: 1.2rem 2rem;
+    border-radius: 10px;
+}
+.contact-btn:hover {
+    background: black;
+    color: orange;
+    margin-top: 2px;
+   
+}
+.contact-btn a{
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 4px;
+    
+}
+
+/* GALLERY  */
+
+#gallery  {
+    padding: 0 4rem;
+}
+#gallery h4{
+    font-size: 2rem;
+    color: orange;
+    text-align: center;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+ 
+
+}
+#gallery img  {
+    width: 100%;
+    width: 100%;
+
+    
+}
+#gallery .gallery-grid {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem
+}
+
+
+
+/* FOOTER */
+#footer {
+    background: blue;
+    padding: 1rem;
+    color: white;
+}
+#footer p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+/* SERVICES */
+#services {
+    /* height: 100vh; */
+    margin: 1rem 3rem;
+    
+    
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1rem
+
+}
+.service {
+    padding: 1rem;
+    height: 22rem;
+    
+    text-align: center;
+    line-height: 1.8;
+    background: whitesmoke;
+    
+}
+.service h1 {
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    
+}
+.service p {
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    
+}
+.service-icon {
+    font-size: 3rem;
+    color: orange;
+}
+
+/* WORK 2 */
+.work2 {
+    background-color: orange;
+    padding: 2rem 5rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+}
+
+.contact-btn2 {
+    background: white;
+    margin-top: 2px;
+    padding: 1rem 2rem;
+    align-self: center;
+    display: inline-block;
+    margin: auto;
+    border-radius: 10px;
+}
+.contact-btn2 a{
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.contact-btn2:hover{
+    
+    background: Black;
+}
+    
+#nav3 {
+    background: white;
+    color: blue;
+    height: 4rem;
+    
+}
+.nav-contact3 {
+    display: flex;
+    justify-content: space-between;
+    padding: .71rem;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}
+.nav-contact3 p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family:monospace;
+    padding-top: 5px;
+    text-align: center;
+    padding:0 3rem;
+}
+/* CONTACT */
+#contact{
+    background: white;
+    padding: 4rem 5rem;
+    height: 50vh;
+}
+.section-header p {
+    font-size: 1.5rem;
+    color: green;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.text-fields {
+    display: grid;
+    grid-template-areas: 
+    'name subject'
+    'email phone'
+    'message message';
+    grid-gap: 1.4rem; 
+    
+} 
+.name-input {
+    grid-area: name;
+}
+.subject-input {
+    grid-area: subject;
+}.email-input {
+    grid-area: email;
+}.phone-input {
+    grid-area: phone;
+}.message-input {
+    grid-area: message;
+}
+.text-input {
+    padding: .3rem;
+}
+.contact-btn3 {
+    background: orange;
+    width: 100%;
+    margin-top: 2px;
+    padding: 1rem 2rem;
+    align-self: center;
+    display: inline-block;
+    margin-top: 3rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.contact-btn3:hover {
+    background: black;
+    color: orange;
+    border: orange solid 2px;
+    
+}
+/* MEDIA QUERIES */
+
+/* IPAD */
+@media (max-width: 768px ) {
+   
+  
+    .nav-contact p {
+        font-size: 10px;
+        font-weight: bold;
+        font-family:monospace;
+        padding-top: 5px;
+    }
+    #overlay {
+        height: 85vh;
+       
+    }
+    
+    
+    #overlay-content h1{
+        font-size: 2rem;
+        line-height: 1.5;
+        padding-top: 5rem;
+        
+    
+    }
+    #overlay-content h2{
+        font-size: 2rem;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+        color: orange;
+    
+    }      
+    
+    #overlay-content a:hover{
+        background: black;
+        color: orange;
+     
+    }
+    #overlay-footer {
+        background: orange;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+        height: 8rem;
+    }
+    #overlay-footer h1{
+       
+        padding-top: 1rem;
+    }
+    #choose {
+        /* height: 50vh; */
+    }
+    .image-text-grid {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        
+        
+        
+    }
+    .image-grid img{
+        height: 100%;
+        width: 100%;
+    }
+    .section-header h1{
+        text-align: center;
+        color: blue;
+        font-size: 2rem;
+        padding: 1rem;
+        margin-bottom: 3rem;
+    }
+    .text-grid {
+        font-size: 1rem;
+        padding: 1rem;
+        
+        
+    }
+    
+    
+    
+    
+    .work {
+        background-color: orange;
+        padding: 2rem 5rem;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .work h1 {
+        font-size: 2rem;
+    }
+    .work p {
+        font-size: 1rem;
+    }
+    .contact-btn {
+        background: white;
+        
+        height: 3rem;
+        border-radius: 10px;
+        width: 10rem;
+    }
+    .contact-btn:hover {
+        background: black;
+        color: orange;
+        margin-top: 2px;
+       
+    }
+    .contact-btn a{
+        color: orange;
+        font-size: 1rem;
+        font-weight: bold;
+        
+        
+       
+        
+    }
+    
+     
+    
+    
+    /* FOOTER */
+    #footer {
+        background: blue;
+        padding: 1rem;
+        color: white;
+    }
+    #footer p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    #services {
+        /* height: 100vh; */
+        margin: 1rem 3rem;
+        
+        
+    }
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 1rem
+    
+    }
+    .service {
+        padding: 1rem;
+        height: 18rem;
+        
+        text-align: center;
+        line-height: 1.5;
+        background: whitesmoke;
+        
+    }
+    .service h1 {
+        color: orange;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        
+    }
+    .service p {
+        
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1rem;
+        
+    }
+    .service-icon {
+        font-size: 3rem;
+        color: orange;
+    }
+    
+        
+    
+    }
+    .nav-contact3 p {
+        font-size: .75rem;
+        font-weight: bold;
+        font-family:monospace;
+        padding-top: 5px;
+        text-align: center;
+        padding:0 3rem;
+    }
+    
+    /* SMART PHONES */
+    @media (max-width: 500px ) {
+        #nav1 {
+            display: none;
+            background: #eee;
+            color: blue;
+            height: 3rem;
+            
+        }
+        #nav2 {
+            background: blue;
+            
+        }
+        .nav2-container {
+            
+            margin: auto;
+            align-items: center;
+            height: 3rem;
+        }
+        .nav2 {
+            display: flex;
+            justify-content: space-between;
+        }
+   
+        .menus ul a{
+            padding: .5rem;
+            color: white;
+            font-size: 10px;
+            margin: 10px 5px;
+            font-weight: bold;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        }
+       
+         
+        .logo h1 {
+            font-size: 1.3rem;
+            color: white;
+            margin-left: 2rem;
+        }
+        #overlay {
+            height: 88vh;
+            
+        }
+        #overlay-content {
+            color: white;
+            position: relative;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            padding-top: 10rem;
+            
+        }
+        #overlay-content h1{
+            font-size: 1.3rem;
+            line-height: 1.5;
+            /* color: blue; */
+            
+        
+        }
+        #overlay-content h2{
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 3rem;
+            color: orange;
+        
+        }
+        #overlay-footer {
+            background: orange;
+            color: white;
+            height: 4rem;
+            text-align: center;
+            
+        }
+        #overlay-footer h1{
+           font-size: 1.2rem;
+           margin-top: -1rem;
+            
+        }
+    
+    
+        /* SERVICES */
+#services {
+    /* height: 100vh; */
+    margin: 1rem 3rem;
+    
+    
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-gap: 1rem
+
+}
+.service {
+    padding: 1rem;
+    height: 18rem;
+    
+    text-align: center;
+    
+    background: whitesmoke;
+    
+}
+.service h1 {
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+.service p {
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    
+}
+.service-icon {
+    font-size: 2rem;
+    color: orange;
+}
+
+/* about section */
+
+#about {
+    /* height: 50vh; */
+    background: whitesmoke;
+}
+.image-text-grid {
+    display: grid;
+    grid-template-columns: 3fr 0fr;
+    border: none;
+    
+    
+    
+}
+.image-grid img{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+.section-header h1{
+    text-align: center;
+    color: blue;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+.text-grid {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    text-align: justify;
+}
+
+.image-grid {
+    
+    border: none;
+   
+}
+.work {
+    background-color: orange;
+    
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.work h1 {
+    font-size: 1.5rem;
+}
+.work p {
+    font-size: 1rem;
+}
+.contact-btn {
+    display: none;
+    background: white;
+    margin-top: 2px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+/* GALLERY  */
+
+#gallery  {
+    padding: 0 2rem;
+}
+#gallery h4{
+    font-size: 2rem;
+    color: orange;
+    text-align: center;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+ 
+
+}
+#gallery img  {
+    width: 100%;
+    width: 100%;
+
+    
+}
+#gallery .gallery-grid {
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem
+}
+.work2 {
+    background-color: orange;
+    
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+}
+
+.contact-btn2 {
+    background: white;
+    margin-top: 2px;
+    padding: 1rem 2rem;
+    align-self: center;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+.contact-btn2 a{
+    color: orange;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.contact-btn2:hover{
+    
+    background: Black;
+}
+#nav3 {
+    background: white;
+    color: blue;
+    height: 4rem;
+    margin-bottom: 3rem;
+    
+}
+.nav-contact3 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}
+.nav-contact3 p {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family:monospace;
+    padding-top: 5px;
+    text-align: center;
+
+}
+/* CONTACT */
+#contact{
+
+}
+.section-header p {
+    font-size: 1rem;
+    color: green;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.text-fields {
+    display: grid;
+    grid-template-areas: 
+    'name' 
+    'subject'
+    'email' 
+    'phone'
+    'message';
+    grid-gap: 1.4rem; 
+    
+} 
+.name-input {
+    grid-area: name;
+}
+.subject-input {
+    grid-area: subject;
+}.email-input {
+    grid-area: email;
+}.phone-input {
+    grid-area: phone;
+}.message-input {
+    grid-area: message;
+}
+.text-input {
+    padding: .3rem;
+}
+.contact-btn3 {
+    background: orange;
+    width: 100%;
+    margin-top: 2px;
+    padding: 1rem 2rem;
+    align-self: center;
+    display: inline-block;
+    margin-top: 3rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.contact-btn3:hover {
+    background: black;
+    color: orange;
+    border: orange solid 2px;
+    
+ 
+}
